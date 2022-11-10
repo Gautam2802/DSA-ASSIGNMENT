@@ -1,0 +1,50 @@
+FOR BubbleSORT
+
+// Time Complexity: O(n^2)
+// Auxiliary Space: O(1)
+
+/*
+1)Number of Comparisons :-
+In this sorting technique the largest element  is moved towards the last place. 
+Sorting takes place by stepping through all data items one-by-one in pairs and 
+comparing adjacent data items and swapping each order that is out of order
+Bubble sort algorithm requires a pair of nested loops. The outer loop must 
+iterate once for each element for the given elements i.e, n times. while the 
+inner loop iterates n times for first iteration , n-1 times for second iteration,
+n-2 times for third iteration and this process continues.So the total number of 
+comparisons,therefore is (n-1)+(n-2)+(n-3)+....+3+2+1 == O(n^2).
+
+2)Number of Swaps :-
+Best Case = Sorted array is given as input Or almost all elements are in proper place. [ O(N) ]. O(1) swaps.
+Worst Case: Reversely sorted / Very few elements are in proper place. [ O(N2) ] . O(N2) swaps.
+Average Case: [ O(N2) ] . O(N2) swaps.
+it is a simple sorting approach and also a stable sort
+
+3)Implementation:-
+Inplace algorithms as it requires O(1) extra space for swapping elements.
+
+*/
+
+FOR SelectionSORT
+
+// Time Complexity: O(n^2)
+// Auxiliary Space: O(1)
+
+/*
+1)Number of comparisons:-
+Selection sort selects i-th smallest element and places at i-th position.This algorithm divides the array into two parts:
+sorted (left) and unsorted (right) subarray. It selects the smallest element from unsorted subarray and places in the first
+position of that subarray (ascending order). It repeatedly selects the next smallest element.
+For N elements it takes 1+2+3+…+n-1 = (n-1)n/2 comparisons
+
+2)Number of swaps:-
+Best Case [ O(n2) ]. And O(1) swaps.
+Worst Case: Reversely sorted, and when the inner loop makes a maximum comparison. [ O(N2) ] . Also, O(N) swaps.
+Average Case: [ O(n2) ] . Also O(n) swaps.
+Selection sort performs (at most) n – 1 swaps between data elements, while the bubble sort swaps n * (n – 1) / 2 elements in the worst case (when the list is sorted in reverse order).
+
+3)Implementation:-
+It is both in-place as well as out-place algorithm.
+In-Place sort = Selection sort can be implemented without using extra space,by just modifying the given input array.The smallest element can be placed in beginning of unsorted array
+Out-place sort = Selection sort can also be implemented by making an extra array, finding the minimum from given input array and placing that element in new array
+*/
